@@ -24,6 +24,7 @@
   
   i {
     position: absolute;
+    z-index: 5;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, -200%);
@@ -74,6 +75,38 @@
       opacity: 0;
       transform: translateY(200%);
       transition: .3s;
+    }
+  }
+}
+
+.btn--black {
+  &::before {
+    background: #555555;
+  }
+  &::after {
+    border-color: #555555;
+  }
+  &:hover,
+  &:active {
+    i {
+      color: #fff;
+      transform: translate(-50%, 50%);
+      transition: .3s;
+    }
+    
+    &::before {
+      transform: translateY(100%) rotate3d(0, 0, 1, 0deg);
+      transition: .3s;
+    }
+    
+    span {
+      opacity: 0;
+      transform: translateY(200%);
+      transition: .3s;
+    }
+    
+    &::after {
+      border-color: #fff;
     }
   }
 }
