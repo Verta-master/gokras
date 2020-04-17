@@ -469,7 +469,7 @@ h1,
 .title {
   font-size: 50px;
   line-height: 63px;
-  color: #fe514c;
+  color: #555;
   font-weight: 700;
   text-align: center;
 }
@@ -770,6 +770,7 @@ h3,
 }
 .promo__text .title {
   margin-bottom: 0;
+  color: #fe514c;
 }
 .promo__text .title-2 {
   margin: 0;
@@ -1135,6 +1136,77 @@ h3,
 .catalog__link {
   margin-top: auto;
 }
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 15px;
+}
+.card__img {
+  width: 48%;
+}
+.card__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card__info {
+  width: 48%;
+}
+.tabs__field a,
+.card__info a {
+  color: #04b;
+  border-bottom: 1px dashed #04b;
+  word-break: break-all;
+}
+.tabs__field a:hover,
+.card__info a:hover,
+.tabs__field a:active,
+.card__info a:active {
+  border-color: #fff;
+}
+.tabs {
+  margin-bottom: 40px;
+}
+.tabs__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tabs__title .ui-tabs-active a {
+  background: #fe514c;
+  color: #fff;
+}
+.tabs__name {
+  border-bottom: 5px solid #fe514c;
+}
+.tabs__name a {
+  display: block;
+  outline: none;
+  padding: 10px 15px;
+  background: #e9eaeb;
+  color: #707070;
+}
+.tabs__wrap {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs__field {
+  padding-left: 10px;
+}
 @media (max-width: 1200px) {
   .wrapper {
     width: 100%;
@@ -1275,6 +1347,27 @@ h3,
   }
   .catalog__item {
     width: 50%;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .tabs__name,
+  .tabs__name a,
+  .card__img,
+  .card__info {
+    width: 100%;
+  }
+  .card__img {
+    margin-bottom: 20px;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name a {
+    text-align: center;
   }
 }
 @media (max-width: 766px) {
