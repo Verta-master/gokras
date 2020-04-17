@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>GO!Krasnogorsk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -43,25 +44,27 @@
     <section class="catalog">
       <div class="wrapper">
         <h1 class="title-2">Предприятия города Красногорск</h1>
-        <ul id="filter" class="catalog__tags">
-          <li><a href="#" class="current catalog__btn" data-filter="*">Все</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".eat">Питание</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".education">Образование</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".services">Услуги</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".medical">Медицина</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".sport">Спорт</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".shop">Магазин</a></li>
-          <li><a href="#" class="catalog__btn" data-filter=".manufacture">Производство</a></li>
-        </ul>
+        <div id="options">
+          <ul class="catalog__tags filter-button-group">
+            <li class="catalog__btn is-checked" data-filter="*">Все</li>
+            <li class="catalog__btn" data-filter=".eat">Питание</li>
+            <li class="catalog__btn" data-filter=".education">Образование</li>
+            <li class="catalog__btn" data-filter=".services">Услуги</li>
+            <li class="catalog__btn" data-filter=".medical">Медицина</li>
+            <li class="catalog__btn" data-filter=".sport">Спорт</li>
+            <li class="catalog__btn" data-filter=".shop">Магазин</li>
+            <li class="catalog__btn" data-filter=".manufacture">Производство</li>
+          </ul>
+        </div>
       </div>
-      <ul class="catalog__list">
+      <ul class="catalog__list isotope">
         <li class="catalog__item work eat">
           <figure class="catalog__img">
             <img src="img/images/img-4.jpg" alt="Предприятия">
           </figure>
           <h2>Red Finch Pub</h2>
           <p>Вобрав в себя черты паба, ресторана, бара, клуба, одновременно с тёплой домашней атмосферой, "Red Finch Pub" стал местом встречи и общения для друзей, знакомых, родственников, детей, для всех.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work education">
@@ -70,7 +73,7 @@
           </figure>
           <h2>Детский Центр "Мы Умные Дети!"</h2>
           <p>Мы создали свой центр с целью дать детям способность развиваться не по шаблону, творить, изобретать, мечтать.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work eat">
@@ -79,7 +82,7 @@
           </figure>
           <h2>Красногорский Пекарь</h2>
           <p>Мы занимаемся производством хлебобулочных изделий по новейшим технологиям. Мы производим весь перечень европейского хлеба и широкий ассортимент булочек.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work services">
@@ -88,7 +91,7 @@
           </figure>
           <h2>ПК-Красногорск</h2>
           <p>Компания ПК-Красногорск предлагает существенные скидки пенсионерам, а также на работы, необходимые для перевода Вашего рабочего места на удалёнку. Поможем настроить любую Вашу технику и починим в случае неисправности.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work services">
@@ -97,7 +100,7 @@
           </figure>
           <h2>Автозапчасти24</h2>
           <p>Магазин Автозапчасти24 работает 24 часа в сутки, 7 дней в неделю, 365 дней в году на благо наших горожан. На время сложной обстановки предлагается бесплатная замена масла в любое удобное время всем желающим</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work education">
@@ -106,7 +109,7 @@
           </figure>
           <h2>Музыкальная школа Мелодия</h2>
           <p>Музыкальная школа для взрослых и детей любого уровня подготовки. Вокал, фортепиано, гитара, ударные, скрипка, актёрское мастерство. Индивидуальные занятия в online формате</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work services">
@@ -115,7 +118,7 @@
           </figure>
           <h2>ООО "АршинЪ"</h2>
           <p>Компания АршинЪ уже 11 лет на рынке кадастра и инженерных изысканий в Красногорске. Сейчас мы сохранили полный функционал при удаленной работе сотрудников.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work eat">
@@ -124,7 +127,7 @@
           </figure>
           <h2>ПеПеПицца</h2>
           <p>Работаем в Нахабино с 2001 г. Наша пицца уже стала классикой.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work education">
@@ -133,7 +136,7 @@
           </figure>
           <h2>Детский центр SmartyKids</h2>
           <p>Хобби-центр для детей от 2 до 16 лет в Павшинской пойме. Работаем почти 2 года. Центр предлагает более 10 различных направлений.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work shop">
@@ -142,7 +145,7 @@
           </figure>
           <h2>Праздничный Бум</h2>
           <p>Сеть магазинов товаров для праздника. Доставка гелиевых шаров, свечей и товаров для праздника.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work eat">
@@ -151,7 +154,7 @@
           </figure>
           <h2>Пряничная Мастерская "Вкусности от Насти"</h2>
           <p>Пряничная Мастерская "Вкусности от Насти" печет вкуснющие пряники, чтобы вы могли подобрать подарок даже для того, у кого все есть: пряник-трамвай и пряник-швейная машинка</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work manufacture">
@@ -160,7 +163,7 @@
           </figure>
           <h2>ООО "Мебельная фабрика "Дана"</h2>
           <p>Производственное предприятие максимального цикла, специализирующееся на производстве корпусной мебели бытового назначения. </p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work services">
@@ -169,7 +172,7 @@
           </figure>
           <h2>Моя помощница</h2>
           <p>Наша компания работает по Красногорску и Красногорскому району, а также по близлежайщим районам. Оказываем услуги для дома: уборка, уникальные тарифные планы, делаем генеральную уборку после ремонта.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work services">
@@ -178,7 +181,7 @@
           </figure>
           <h2>Нelens_raiment</h2>
           <p>Шью на заказ для малышей и взрослых от белья до шляпок. Уникальная услуга - виртуальное ателье: пошив без примерок.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work sport">
@@ -187,7 +190,7 @@
           </figure>
           <h2>World Gym</h2>
           <p>Мы предоставляем населению услуги фитнеса: тренажерный зал, бассейн с морской водой, грудничковое плавание, групповые тренировки, теннис, бадминтон, футбол, волейбол, баскетбол. Наш Клуб - самый большой World Gym в Европе.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work medical">
@@ -196,7 +199,7 @@
           </figure>
           <h2>Медицинский центр «Лари»</h2>
           <p>Предоставляем различные медицинские услуги и консультация врачей: терапевт, педиатр, невролог, эндокринолог, кардиолог, гастроэнтеролог, гинеколог.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work education">
@@ -205,7 +208,7 @@
           </figure>
           <h2>Художественная школа inArt</h2>
           <p>Академическая художественная школа, где работают выпускники МГХПА им Строганова и МГАХИ им Сурикова</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work sport medical">
@@ -214,7 +217,7 @@
           </figure>
           <h2>Школа здорового образа жизни «Эстетика»</h2>
           <p>Главный Смысл нашей работы - помочь людям стать стройнее и воплотить в жизнь связанные с этим мечты.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work eat">
@@ -223,7 +226,7 @@
           </figure>
           <h2>Кафе "Шенген"</h2>
           <p>Ресторан европейской и японской кухни</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
         <li class="catalog__item work education">
@@ -232,7 +235,7 @@
           </figure>
           <h2>Образовательная робототехника "Умная механика"</h2>
           <p>Занятия по робототехнике для детей от 7 до 12 лет. Сотрудничаем с Кванториум и Яндекс лицей. Упор на проектную деятельность.</p>
-          <a href="#" class="btn catalog__btn"><i class="icon fa-angle-right"></i><span>Подробнее</span>
+          <a href="#" class="btn catalog__link"><i class="fas fa-angle-right"></i><span>Подробнее</span>
           </a>
         </li>
       </ul>
@@ -263,27 +266,20 @@
   <script src="js/script.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
   
-  <!-- Isotop -->
+<!--  Isotope filter-->
   <script>
-    $(document).ready(function() {
-      $('.works').isotope({
-        itemSelector: '.work'
-      });
-      $('#filter a').click(function(){
-        $('#filter a').removeClass('current');
-        $(this).addClass('current');
-        var selector = $(this).attr('data-filter');
-
-        $('.works').isotope({
-          filter: selector,
-          animationOptions: {
-            duration: 1000,
-            easing: 'easeOutQuart',
-            queue: false
-          }
-        });
-        return false;
-      });
+  $(document).ready(function() {
+    var $container = $('.isotope');
+    $('.filter-button-group .catalog__btn').click(function(){
+      var $this = $(this);
+      if ( !$this.hasClass('is-checked') ) {
+        $this.parents('#options').find('.is-checked').removeClass('is-checked');
+        $this.addClass('is-checked');
+      }
+      var selector = $this.attr('data-filter');
+      $container.isotope({  itemSelector: '.catalog__item', filter: selector });
+      return false;
+    });
     });
   </script>
 </body>
